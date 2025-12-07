@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini AI Chatbot</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h2>Gemini</h2>
+      <span class="sub">AI Chat</span>
+    </header>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- Thinking Indicator -->
+    <div id="thinking" class="thinking">Gemini is thinking...</div>
+
+    <form id="chat-form" class="chat-input-area">
+
+      <!-- Upload Image Button -->
+      <label for="image-upload" class="upload-btn">📎</label>
+      <input 
+        type="file" 
+        id="image-upload" 
+       accept="image/*,application/pdf,audio/*,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,text/plain"
+        style="display: none;"
+      />
+
+      <input 
+        type="text" 
+        id="user-input" 
+        placeholder="Send a message…" 
+        autocomplete="off" 
+        required
+      />
+
+      <button type="submit">➤</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
